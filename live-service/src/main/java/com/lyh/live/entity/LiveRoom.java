@@ -5,6 +5,8 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
+import java.time.LocalDateTime;
+
 @Data
 @TableName("live_room")
 public class LiveRoom {
@@ -17,4 +19,5 @@ public class LiveRoom {
     private String coverImg;
     private Integer status;
     private String streamKey;
+    private LocalDateTime createTime;
 }
