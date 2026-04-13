@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: live-service
+  cloud:
+    nacos:
+      config:
+        namespace: 6e47f5ca-2f75-4840-af7f-644425c12c6c
+        server-addr: 100.76.37.124:8848 #nacos中心地址
+        file-extension: yaml # 配置文件格式
+        shared-configs:
+          - data-id: redis-config-dev.yaml
+          - data-id: nacos-discovery-config-dev.yaml
+  profiles:
+    active: dev # 环境标识
